@@ -8,8 +8,8 @@ const items = [
   ['Skills', '#skills'],
   ['Certificates', '#certs'],
   ['Contact', '#contact'],
-  ['Creative 3D Desk ↗', '/creative'],
-  ['Above the Clouds ↗', '/clouds'],
+  ['Creative 3D Desk\u00A0↗', '/creative'],
+  ['Above the Clouds\u00A0↗', '/clouds'],
 ];
 
 export default function Menu({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -37,7 +37,7 @@ export default function Menu({ open, onClose }: { open: boolean; onClose: () => 
             className="menu-cv-btn"
             onClick={onClose}
           >
-            Download CV / Resume (PDF) ↓
+            Download ↓
           </a>
         </div>
         <dl>
