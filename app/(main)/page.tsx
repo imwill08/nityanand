@@ -1,5 +1,5 @@
 import Shell from '@/components/Shell';
-import { Strip, About, Work, Skills, Certs, Contact, Footer } from '@/components/Sections';
+import { Strip, About, Work, Skills, Certs, Domains, Contact, Footer } from '@/components/Sections';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Work />
       <Skills />
       <Certs />
+      <Domains />
       <Contact />
       <Footer />
     </Shell>

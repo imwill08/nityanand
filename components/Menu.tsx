@@ -7,6 +7,7 @@ const items = [
   ['Work', '#work'],
   ['Skills', '#skills'],
   ['Certificates', '#certs'],
+  ['Domains', '#domains'],
   ['Contact', '#contact'],
   // ['Creative 3D Desk\u00A0↗', '/creative'],
   // ['Above the Clouds\u00A0↗', '/clouds'],

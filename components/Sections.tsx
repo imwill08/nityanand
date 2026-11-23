@@ -1,6 +1,7 @@
 import { Title } from './Title';
-import { CertIcon } from './Icons';
 import { ContactForm } from './ContactForm';
+import { CertsList } from './CertsSection';
+import { DomainsSection } from './DomainsSection';
 import { certs, jobs, profile, skills, stack } from '@/lib/data';
 
 export function Strip() {
@@ -94,26 +95,13 @@ export function Certs() {
         </a>
       </div> */}
       <Title lead="Always" muted="learning" />
-      <div className="grid2" style={{ marginTop: 36 }}>
-        {certs.map((c) => (
-          <div className="cert rv" key={c.title}>
-            <i><CertIcon name={c.icon} /></i>
-            <div><h3>{c.title}</h3><small>{c.meta}</small></div>
-            <a
-              href={c.file}
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cert-dl-btn"
-              title={`Download ${c.title} Certificate`}
-            >
-              ↓
-            </a>
-          </div>
-        ))}
-      </div>
+      <CertsList />
     </section>
   );
+}
+
+export function Domains() {
+  return <DomainsSection />;
 }
 
 export function Contact() {
