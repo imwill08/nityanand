@@ -106,14 +106,24 @@ export function useScrollEffects() {
       const vh = window.innerHeight;
       const hh = hero?.offsetHeight ?? vh;
 
+      const isMobileHero = window.innerWidth <= 640;
+
       // Hero parallax
       if (hero && y < hh + 100) {
         const p = cl(y / hh);
-        if (ghost) ghost.style.transform = `translateY(${y * 0.4}px)`;
-        if (photo) photo.style.transform = `translate(-50%, ${y * 0.14}px) scale(${1 + p * 0.14})`;
-        if (poly) poly.style.transform = `translateY(${-y * 0.2}px) rotate(${p * 10}deg)`;
-        if (big) big.style.transform = `translateX(${-y * 0.22}px)`;
-        if (talk) talk.style.transform = `translateY(${y * 0.25}px)`;
+        if (ghost) ghost.style.transform = `translateY(${y * (isMobileHero ? 0.22 : 0.4)}px)`;
+        if (photo) {
+          photo.style.transform = `translate(-50%, ${y * (isMobileHero ? 0.08 : 0.14)}px) scale(${1 + p * (isMobileHero ? 0.06 : 0.14)})`;
+        }
+        if (isMobileHero) {
+          if (poly) poly.style.transform = '';
+          if (big) big.style.transform = '';
+          if (talk) talk.style.transform = '';
+        } else {
+          if (poly) poly.style.transform = `translateY(${-y * 0.2}px) rotate(${p * 10}deg)`;
+          if (big) big.style.transform = `translateX(${-y * 0.22}px)`;
+          if (talk) talk.style.transform = `translateY(${y * 0.25}px)`;
+        }
       }
 
       // Title headings blur-to-sharp

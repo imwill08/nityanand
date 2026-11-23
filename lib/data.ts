@@ -4,11 +4,11 @@ export const profile = {
   phone: '+91 98375 06732',
   resume: '/Nityanand_frontend_dev.pdf',
   links: [
-    { label: 'Download Resume (PDF) ↓', href: '/Nityanand_frontend_dev.pdf', download: true },
-    { label: 'Creative 3D Portfolio ↗', href: '/creative' },
-    { label: 'Above the Clouds (3D Flight) ↗', href: '/clouds' },
-    { label: 'LinkedIn', href: '#' },
-    { label: 'GitHub', href: '#' },
+    { label: 'Download ↓', href: '/Nityanand_frontend_dev.pdf', download: true },
+    // { label: 'Creative 3D Portfolio ↗', href: '/creative' },
+    // { label: 'Above the Clouds (3D Flight) ↗', href: '/clouds' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nityanand-ba65bb1b7/' },
+    { label: 'GitHub', href: 'https://github.com/imwill08' },
   ],
 };
 

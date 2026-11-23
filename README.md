@@ -12,7 +12,7 @@ npm run build && npm start
 ## Edit your content
 - `lib/data.ts` – name, contact details, social links (replace the `#` placeholders), jobs, skills, certificates
 - `components/Sections.tsx` – section layout and copy
-- `public/nityanand.webp` – hero photo (transparent background works best)
+- `public/nitya-gta.png` – hero photo (transparent background works best)
 - `app/globals.css` – colours are CSS variables at the top (`--orange` is the cobalt blue, `--lime` is the accent)
 
 ## Structure

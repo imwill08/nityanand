@@ -27,26 +27,28 @@ export default function Menu({ open, onClose }: { open: boolean; onClose: () => 
           </li>
         ))}
       </ul>
-      <div className="menu-cv-box">
-        <a
-          href={profile.resume}
-          download="Nityanand_frontend_dev.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="menu-cv-btn"
-          onClick={onClose}
-        >
-          Download CV / Resume (PDF) ↓
-        </a>
+      <div className="menu-meta">
+        <div className="menu-cv-box">
+          <a
+            href={profile.resume}
+            download="Nityanand_frontend_dev.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="menu-cv-btn"
+            onClick={onClose}
+          >
+            Download CV / Resume (PDF) ↓
+          </a>
+        </div>
+        <dl>
+          <dt>Email</dt>
+          <dd>{profile.email}</dd>
+          <dt>Phone</dt>
+          <dd>{profile.phone}</dd>
+          <dt>Role</dt>
+          <dd>React Developer · Frontend Developer</dd>
+        </dl>
       </div>
-      <dl>
-        <dt>Email</dt>
-        <dd>{profile.email}</dd>
-        <dt>Phone</dt>
-        <dd>{profile.phone}</dd>
-        <dt>Role</dt>
-        <dd>React Developer · Frontend Developer</dd>
-      </dl>
     </div>
   );
 }

@@ -81,7 +81,7 @@ export function Skills() {
 export function Certs() {
   return (
     <section className="s dark" id="certs">
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, marginBottom: 18 }}>
+      {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, marginBottom: 18 }}>
         <span className="chip" style={{ background: '#222', color: '#999', margin: 0 }}>Certifications</span>
         <a
           href={profile.resume}
@@ -92,7 +92,7 @@ export function Certs() {
         >
           Download CV (PDF) ↓
         </a>
-      </div>
+      </div> */}
       <Title lead="Always" muted="learning" />
       <div className="grid2" style={{ marginTop: 36 }}>
         {certs.map((c) => (
@@ -107,7 +107,7 @@ export function Certs() {
               className="cert-dl-btn"
               title={`Download ${c.title} Certificate`}
             >
-              Download PDF ↓
+              ↓
             </a>
           </div>
         ))}
